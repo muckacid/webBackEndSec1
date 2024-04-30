@@ -2,7 +2,8 @@ const { Router } = require('express')
 const router = Router()
 
 router.get('/', (req, res) => {
-    res.send("mensaje a la web")
+    const nombre = "maximiliano"
+    res.render('home', { nombre })
 })
 
 router.get('/about', (req, res) => {
